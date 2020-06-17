@@ -1,32 +1,38 @@
+VALID (RFC 8259)
+Formatted JSON Data
 {
-    "content": [
+   "content":[
       {
-        "url": "https://s3.eu-central-1.amazonaws.com/com.veeplay.samples/progressive/Sintel.2010.4kHD-MP4.mp4",
-        "autoplay": true
+         "url":"https://s3.eu-central-1.amazonaws.com/com.veeplay.samples/progressive/Sintel.2010.4kHD-MP4.mp4",
+         "autoplay":true
       }
-    ],
-    "ads": {
-      "adBreaks": {
-        "preContent": [
-          {
-            "urls": [
-              "https://raw.githubusercontent.com/veeplay/testing-samples/master/Veeplay/22MultipleAdsJustMp4.xml"
-            ]
-          }
-        ],
-        "nonLinears": [
-          {
-            "urls": [
-              "https://raw.githubusercontent.com/veeplay/testing-samples/master/Veeplay/24VastInlineBannerAd.xml"
-            ],
-            "offset": "30"
-          }
-        ],
-        "midContent": [],
-        "postContent": []
+   ],
+   "ads":{
+      "adBreaks":{
+         "preContent":[
+            {
+               "urls":[
+                  "https://raw.githubusercontent.com/veeplay/testing-samples/master/Veeplay/22MultipleAdsJustMp4.xml"
+               ]
+            }
+         ],
+         "nonLinears":[
+            {
+               "urls":[
+                  "https://raw.githubusercontent.com/veeplay/testing-samples/master/Veeplay/24VastInlineBannerAd.xml"
+               ],
+               "offset":"30"
+            }
+         ],
+         "midContent":[
+
+         ],
+         "postContent":[
+
+         ]
       },
-      "countdown": {
-        "text": "__ad_index__/__total_ads__ ads. Remaining: __remaining__s"
+      "countdown":{
+         "text":"__ad_index__/__total_ads__ ads. Remaining: __remaining__s"
       }
-    }
+   }
 }
